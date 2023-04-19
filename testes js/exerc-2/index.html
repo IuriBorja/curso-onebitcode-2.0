@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    
+    <h1>Nacionalidades</h1>
+
+    Em qual país vive? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+
+    <div id="res">
+
+    </div>
+
+
+
+    <script>
+        function nacionalidade() {
+            var p = document.getElementById('txtpais');
+            var res = document.getElementById('res');
+
+            var valor = p.value.toLowerCase();
+
+            res.innerHTML = `Você vive no <strong>${valor}</strong>`;
+
+            if (valor === 'brasil') {
+                res.innerHTML += `<br>Sua nacionalidade é Brasileira!`;
+            } else {
+                res.innerHTML = `Você é estrangeiro!`;
+            }
+        }
+    </script>
+</body>
+</html>
