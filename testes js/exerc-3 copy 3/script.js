@@ -1,4 +1,4 @@
-function tabuada() {
+/* function tabuada() {
     let num = document.getElementById('txtn');
     let tab = document.getElementById('seltab');
 
@@ -18,4 +18,22 @@ function tabuada() {
                 }
 
         }
+} */
+
+
+
+let valores = [8, 1, 5, 7, 9, 12];
+
+
+for (let i = 0; i < valores.length; i++) {
+    console.log(`A posição ${i} tem o valor ${valores[i]} `);
 }
+
+
+
+
+
+
+
+
+
