@@ -2,10 +2,6 @@ let num = '';
 let menu = '';
 
 do {
-
-    /* num = Number(prompt('Digite um número:')); */
-
-
     menu = prompt(`Calculadora Geométrica. \nSelecione uma opção de cálculo:
     \n1) Área do triângulo: base * altura / 2
     \n2) Área do retângulo: base * altura
@@ -34,8 +30,6 @@ do {
     function areaCirculo(raio, pi = 3.14) {
         return (pi * (raio * raio));
     }
-
-
 
     switch(menu) {
         case '1':
@@ -69,7 +63,5 @@ do {
             alert('Opção inválida');
             break;
     }
-
-
 
 } while (menu !== '6')
