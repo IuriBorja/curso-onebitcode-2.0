@@ -47,7 +47,7 @@ const orcs = personagens.filter(function (personagem) {
 //reduce 
 
 
-let nivelTotal = 0
+/* let nivelTotal = 0 */
 for (let i = 0; i < personagens.length; i++) {
   nivelTotal += personagens[i].nivel
 }
